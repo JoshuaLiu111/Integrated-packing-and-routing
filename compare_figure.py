@@ -60,5 +60,13 @@ if __name__ == "__main__":
         output_full = json.load(json_file)
       
     out_ = output_full['whether3d_True']['class_num_8']['box_num_10']
-
+    
+    #get best
+    Temp_num = len(out_[list(out_)[0]][0])
+    for des in out_:
+        read = out_[des]
+        man = []
+        for i in range(Temp_num):
+            man.append(min(read[2][i],read[3][i],read[4][i],read[5][i],read[6][i]))
+        out_[des] = [read[0],read[1],man]
     dict2figure_compare(out_)
