@@ -52,7 +52,7 @@ if __name__ == "__main__":
     #Combine
     Ins_list = [De_list,B_list,P_list,T_list,D_list,desmap]
     
-    solver_options = {"solver": "glpk", "mip_gap": 0.00001, "time_limit": 1000}
+    solver_options = {"solver": "gurobi", "mip_gap": 0.00001, "time_limit": 1000}
     
     #Run
     run_least_cost_opt(Ins_list, solver_options)

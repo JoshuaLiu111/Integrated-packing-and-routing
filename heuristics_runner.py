@@ -181,13 +181,13 @@ if __name__ == "__main__":
     np.random.seed(6)
     #Input
     Depot_Num = 1
-    Box_Num = 100
-    Pallet_Num = 100
-    Truck_Num = 50
-    Destination_Num = 50
+    Box_Num = 40
+    Pallet_Num = 40
+    Truck_Num = 40
+    Destination_Num = 25
     Dimen = True
-    Class = 8
-    fun = 1
+    Class = 5
+    fun = 2
     #List
     De_list = depotgen(Depot_Num)
     B_list = boxgen(Box_Num,Destination_Num,Class)

@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "2s-cvrp"
+version = "0.1.0"
+description = ""
+authors = ["JLiu <joshua.liu@decisionlab.co.uk>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+pre-commit = "^2.17.0"
+numpy = "^1.24.2"
+pandas = "^1.5.3"
+pyomo = "^6.5.0"
+statistics = "^1.0.3.5"
+scipy = "^1.10.1"
+sklearn = "^0.0.post1"
+plotly = "^5.13.0"
+keras = "^2.11.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
