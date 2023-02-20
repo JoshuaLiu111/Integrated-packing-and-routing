@@ -25,6 +25,8 @@ def run_least_cost_opt(Ins_list:list, solver_options:Dict):
     print('Variable values are:',var_outputs)
     print('Total cost is:',cost_outputs)
     print('Running time of the algorithm is:', round(runtime,2), 's')
+    
+    return cost_outputs
 
 
 if __name__ == "__main__":
