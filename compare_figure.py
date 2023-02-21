@@ -38,8 +38,8 @@ class figure_compare():
             spr = self.out_[des][1]
             comp = self.out_[des][2]
             for i in range(len(base)):
-                rate[0].append((spr[i]-base[i])/base[i])
-                rate[1].append((comp[i]-base[i])/base[i])
+                rate[0].append(100*(spr[i]-base[i])/base[i])
+                rate[1].append(100*(comp[i]-base[i])/base[i])
         
         color = ['hsl('+str(h)+',50%'+',50%)' for h in np.linspace(0, 180, 3)]
         figure_nume = 'Compare outputs with 10 boxes_hist'
@@ -50,7 +50,7 @@ class figure_compare():
         
         fig.update_layout(
             xaxis = dict(tickfont = dict(size=25)),
-            yaxis = dict(title='Accuracy loss',
+            yaxis = dict(title='Opportunity loss',
                          tickfont = dict(size=25),
                          titlefont = dict(size = 25)),
             legend = dict(font = dict(size = 25))
