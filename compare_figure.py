@@ -52,7 +52,8 @@ class figure_compare():
             xaxis = dict(tickfont = dict(size=25)),
             yaxis = dict(title='Accuracy loss',
                          tickfont = dict(size=25),
-                         titlefont = dict(size = 25))
+                         titlefont = dict(size = 25)),
+            legend = dict(font = dict(size = 25))
         )
         
         fig.write_image('Figures/' + figure_nume + '.png')
