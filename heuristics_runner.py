@@ -202,5 +202,5 @@ if __name__ == "__main__":
     Ins_list = [De_list,B_list,P_list,T_list,D_list,desmap]
     
     #Run
-    runfunction(fun,Dimen,Ins_list,Print=True,plot=True)
+    runfunction(fun,Dimen,Ins_list,Print=True,plot=False)
 
